@@ -1,9 +1,6 @@
 ﻿window.addEventListener("DOMContentLoaded", function () {
 
-  // הוספת אירוע
   document.getElementById("find-me").addEventListener("click", geoFindMe);
-
-  // הוספת אירוע
   document.getElementById("shareBtn").addEventListener("click", share);
 
 })
@@ -50,8 +47,8 @@ function geoFindMe() {
 
 function share() {
   const shareData = {
-    title: 'MDN',
-    text: 'Learn web development on MDN!',
+    title: 'שיתוף מיקומך',
+    text: 'קישור למיקום',
     url:'https://maps.google.com/?q=${latitude},${longitude}' 
   }
   
